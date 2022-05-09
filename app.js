@@ -11,15 +11,15 @@ function constructURL(text){
 };
 
 
-const eventHandler = () =>{
+const eventHandler = async() =>{
 console.log("clicked");
  let inputText = userInput.value; 
-  fetch(constructURL(inputText))
-    .then(response => response.json())
-    .then(json => {
-      var translatedText = json.contents.translated
+ fetch(constructURL(inputText))
+  .then(response => response.json())
+  .then(json => {
+ let translatedText = json.contents.translated
  outputBox.innerHTML = translatedText
-    })
+    });
 };
 
 transBtn.addEventListener("click", eventHandler);

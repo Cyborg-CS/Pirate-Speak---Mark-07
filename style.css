@@ -1,4 +1,74 @@
-*{
-  margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Dancing+Script:wght@700&family=Macondo&display=swap');
 
+
+
+body{
+    margin: 0px;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(/pirate.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem, 0px;
+}
+
+.header{
+font-family: 'Macondo', cursive;
+font-size: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bolder;
+
+  /* color: white; */
+background-image: url(/font-texture.jpg);
+background-size: cover;
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
+
+#input-text{
+  margin: 2rem;
+  border: 1px solid black;
+    height: 10vh;
+    width: 400px;
+    padding: 1rem;
+/*     align-items: center;
+    display: flex; */
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    font-size: larger;
+}
+
+#output-box{
+  border: 1px solid black;
+    height: 11.3vh;
+    width: 400px;
+    padding: 1rem;
+/*     align-items: center;
+    display: flex; */
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    
+}
+
+#trans-btn{
+  margin: 2rem;
+  background-image: url(/font-texture.jpg);
+  padding: 1rem;
+  color: white;
+  border:white solid 2px ;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  font-family: 'Macondo', cursive;
+  font-size: 20px;
+   border-radius: 10px;
 }
